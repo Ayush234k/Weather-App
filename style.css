@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+}
+.vid{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+@media (min-aspect-ratio :16/9) {
+    .vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio :16/9) {
+    .vid{
+        width: auto;
+        height: 100%;
+    }
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: linear-gradiet(300deg, #757b87, #909d9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.sh{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+.write{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: #fff;
+    border:  solid 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#form{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:  solid 5px rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#m{
+    color: white;
+    font-size: 100px;
+    font-family: 'Teko', sans-serif;
+    -webkit-text-stroke: 2.5px rgb(0, 0, 0);
+}
+#n{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 50px;
+}
+input {
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    height: 10vh;
+    font-size: 1rem;
+}
+input:focus {
+    outline: none;
+}
+.weather {
+    text-align: center;
+    font-size: 2rem;
+}
+.weather h2 {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+} 
+@media screen and (max-width: 426px){
+    body {
+        /* display: none; */
+    }
+    .sh{
+        /* display: none; */
+    }
+    .write{
+        height: 50vh;
+        padding: 10px;
+        /* display: none; */
+    }
+    #form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        /* display: none; */
+    }
+    #m{
+        font-size: 50px;
+        /* display: none; */
+    }
+    #n{
+        font-size: 10px;
+        /* display: none; */
+    }
+    input {
+        min-width: 100px;
+        height: 10vh;
+        font-size: 1rem;
+        /* display: none; */
+    }
+    input:focus {
+        outline: none;
+    }
+    .weather {
+        /* height: 50px; */
+        width: 80%;
+        /* display: none; */
+    }
+    .weather h2 {
+        width: 80%;
+        /* display: none; */
+    } 
+}
+/* .weather img{ transform: scale(2); } */
